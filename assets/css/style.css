@@ -500,3 +500,41 @@ h5 {
 /*=================================
   choose styling ends here
 =================================*/
+/*=================================
+  more styling starts here
+=================================*/
+.more .wrapper {
+  padding: 94px 5% 50px;
+}
+.more-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+.more-li {
+  line-height: 28px;
+  position: relative;
+}
+.more .pause::before {
+  content: "\f04b";
+  font-family: "fontAwesome";
+  font-size: 40px;
+  color: rgba(240, 248, 255, 0.6980392157);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-indent: 0;
+  position: absolute;
+  z-index: 2;
+  top: 32%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/*=================================
+  more styling ends here
+=================================*/

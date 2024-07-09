@@ -1,0 +1,27 @@
+/*=================================
+  more styling starts here
+=================================*/
+.more {
+  .wrapper {
+    padding: 94px 5% 50px;
+  }
+
+  &-list {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+  }
+
+  &-li {
+    line-height: 28px;
+    position: relative;
+  }
+
+  .pause::before {
+    @include fix-pause($content-pause, 40px, 32%, 50%);
+  }
+}
+/*=================================
+  more styling ends here
+=================================*/
