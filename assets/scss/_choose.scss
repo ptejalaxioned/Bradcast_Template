@@ -7,13 +7,7 @@
   background-color: #343a3d4a;
   padding: 94px 5% 50px;
 
-  .wrapper {
-    padding: 94px 5% 50px;
-  }
-
-  .common-div {
-    align-items: start;
-  }
+  @include common-div(start);
 
   p {
     margin: 29px 0;
@@ -43,8 +37,12 @@
   &-image {
     position: relative;
 
-    .pause::before {
-      @include fix-pause($content-pause, 40px, 46%, 50%);
+    .pause {
+      @include pause-text-in();
+
+      &::before {
+        @include fix-pause($content-pause, 40px, 46%, 50%);
+      }
     }
   }
 

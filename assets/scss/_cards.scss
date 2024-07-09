@@ -6,24 +6,10 @@
 =================================*/
 .cards {
   .wrapper {
-    padding: 94px 5% 50px;
     @include flex-dir(column);
   }
 
-  .common-div {
-    @include flex-dir(column);
-    align-items: center;
-
-    h3 {
-      font-size: 30px;
-      font-weight: 900;
-    }
-
-    p {
-      margin: 29px;
-      font-size: 17.5px;
-    }
-  }
+  @include common-div(center);
 
   .card-list {
     display: flex;
@@ -31,12 +17,15 @@
     margin-top: 32px;
 
     .card {
+      & {
+        position: relative;
+      }
       img {
         width: 539px;
       }
 
       .pause {
-        position: relative;
+        @include pause-text-in();
 
         &::before {
           @include fix-pause($content-pause, 50px, 38%, 50%);
@@ -44,10 +33,7 @@
       }
     }
 
-    figcaption {
-      padding: 30px;
-      background-color: #2a3446;
-    }
+    @include figcaption();
   }
 }
 /*=================================

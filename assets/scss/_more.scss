@@ -3,9 +3,7 @@
   more styling starts here
 =================================*/
 .more {
-  .wrapper {
-    padding: 94px 5% 50px;
-  }
+  @include common-div(center);
 
   &-list {
     width: 100%;
@@ -19,9 +17,15 @@
     position: relative;
   }
 
-  .pause::before {
-    @include fix-pause($content-pause, 40px, 32%, 50%);
+  .pause {
+    @include pause-text-in();
+
+    &::before {
+      @include fix-pause($content-pause, 40px, 32%, 50%);
+    }
   }
+
+  @include figcaption();
 }
 /*=================================
   more styling ends here

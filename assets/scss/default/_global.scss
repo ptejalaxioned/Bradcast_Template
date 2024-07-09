@@ -1,9 +1,10 @@
 @import 'mixins';
+@import 'variable';
 
 /*for all*/
 body {
   font-family: sans-serif;
-  @include color-bg(#121e38, #f0f8ff);
+  @include color-bg($dark-navy, $aliblue);
 }
 
 *,
@@ -19,9 +20,21 @@ a {
   @include inline-block-text();
 }
 
+a {
+  text-decoration: none;
+}
 /*for wrapper*/
 .wrapper {
   max-width: 1920px;
   width: 90%;
   margin: 0 auto;
+}
+
+.all-caps,
+.single-caps::first-letter {
+  @include text-trans(uppercase);
+}
+
+.first-caps {
+  @include text-trans(capitaliZe);
 }

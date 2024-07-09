@@ -1,3 +1,14 @@
+@mixin text-trans($value) {
+  text-transform: capitalize;
+}
+
+@mixin figcaption() {
+  figcaption {
+    padding: 30px;
+    background-color: #2a3446;
+  }
+}
+
 @mixin inline-block-text() {
   display: inline-block;
   list-style-type: none;
@@ -30,4 +41,27 @@
   top: $top;
   left: $left;
   transform: translate(-50%, -50%);
+}
+
+@mixin pause-text-in() {
+  display: flex;
+  text-indent: -9999px;
+}
+
+@mixin common-div($align) {
+  .common-div {
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+
+    h3 {
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    p {
+      margin: 29px;
+      font-size: 17.5px;
+    }
+  }
 }

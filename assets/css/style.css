@@ -179,7 +179,7 @@ sub {
 /*for all*/
 body {
   font-family: sans-serif;
-  background-color: #121e38;
+  background-color: rgba(18, 30, 56, 0.9215686275);
   color: #f0f8ff;
 }
 
@@ -198,11 +198,24 @@ a {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*for wrapper*/
 .wrapper {
   max-width: 1920px;
   width: 90%;
   margin: 0 auto;
+}
+
+.all-caps,
+.single-caps::first-letter {
+  text-transform: capitalize;
+}
+
+.first-caps {
+  text-transform: capitalize;
 }
 
 /*=================================
@@ -347,7 +360,6 @@ h5 {
   cards styling starts here
 =================================*/
 .cards .wrapper {
-  padding: 94px 5% 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,11 +395,17 @@ h5 {
   gap: 45px;
   margin-top: 32px;
 }
+.cards .card-list .card {
+  position: relative;
+}
 .cards .card-list .card img {
   width: 539px;
 }
 .cards .card-list .card .pause {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-indent: -9999px;
 }
 .cards .card-list .card .pause::before {
   content: "\f04b";
@@ -420,13 +438,25 @@ h5 {
   background-color: rgba(52, 58, 61, 0.2901960784);
   padding: 94px 5% 50px;
 }
-.choose .wrapper {
-  padding: 94px 5% 50px;
-}
 .choose .common-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+}
+.choose .common-div h3 {
+  font-size: 30px;
+  font-weight: 900;
+}
+.choose .common-div p {
+  margin: 29px;
+  font-size: 17.5px;
 }
 .choose p {
   margin: 29px 0;
@@ -458,6 +488,12 @@ h5 {
 }
 .choose-image {
   position: relative;
+}
+.choose-image .pause {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-indent: -9999px;
 }
 .choose-image .pause::before {
   content: "\f04b";
@@ -503,8 +539,25 @@ h5 {
 /*=================================
   more styling starts here
 =================================*/
-.more .wrapper {
-  padding: 94px 5% 50px;
+.more .common-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.more .common-div h3 {
+  font-size: 30px;
+  font-weight: 900;
+}
+.more .common-div p {
+  margin: 29px;
+  font-size: 17.5px;
 }
 .more-list {
   width: 100%;
@@ -517,6 +570,12 @@ h5 {
 .more-li {
   line-height: 28px;
   position: relative;
+}
+.more .pause {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-indent: -9999px;
 }
 .more .pause::before {
   content: "\f04b";
@@ -534,7 +593,113 @@ h5 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+.more figcaption {
+  padding: 30px;
+  background-color: #2a3446;
+}
 
 /*=================================
   more styling ends here
+=================================*/
+/*=================================
+  footer styling starts here
+=================================*/
+footer {
+  background-color: #000000;
+}
+footer .wrapper {
+  padding: 94px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 28px;
+}
+footer .wrapper .footer-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+footer .wrapper .footer-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+footer .wrapper .footer-down p {
+  font-size: 14px;
+}
+footer .wrapper .footer-down .footer-span {
+  color: #f0f8ff;
+}
+footer .wrapper .footer-list {
+  padding: 20px 0;
+}
+footer .wrapper .footer-list li {
+  padding: 12px 0;
+  border-bottom: 0.5px solid rgba(190, 185, 185, 0.8705882353);
+  width: 100%;
+  font-size: 14.5px;
+  color: rgba(190, 185, 185, 0.8705882353);
+}
+footer .wrapper .footer-list li:last-child {
+  border: none;
+}
+footer .wrapper h4 {
+  font-size: 23px;
+  font-weight: 900;
+}
+footer .wrapper .icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 13px;
+}
+footer .wrapper .icon-list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-indent: -9999px;
+}
+footer .wrapper .icon-list a::before {
+  font-family: "FontAwesome";
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-indent: 0;
+  color: #f0f8ff;
+}
+footer .wrapper .icon-list .facebook::before {
+  content: "\f09a";
+}
+footer .wrapper .icon-list .instagram::before {
+  content: "\f16d";
+}
+footer .wrapper .icon-list .snapchat::before {
+  content: "\f2ab";
+}
+footer .wrapper .icon-list .twitter::before {
+  content: "\f099";
+}
+footer .wrapper figcaption {
+  color: rgba(190, 185, 185, 0.8705882353);
+}
+
+/*=================================
+  footer styling ends here
 =================================*/

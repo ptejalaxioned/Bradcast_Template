@@ -1,11 +1,10 @@
-@import 'default/variable';
-@import 'default/mixins';
 /*=================================
   footer styling starts here
 =================================*/
 footer {
   background-color: #000000;
-  #000000 .wrapper {
+
+  .wrapper {
     padding: 94px 0;
     @include flex-dir(column);
     gap: 28px;
@@ -56,8 +55,7 @@ footer {
       gap: 13px;
 
       a {
-        float: left;
-        text-indent: -9999px;
+        @include pause-text-in();
 
         &::before {
           font-family: 'FontAwesome';
