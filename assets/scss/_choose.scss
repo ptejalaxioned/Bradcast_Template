@@ -5,7 +5,7 @@
 =================================*/
 .choose {
   background-color: #343a3d4a;
-  padding: 94px 5% 50px;
+  @include padding();
 
   @include common-div(start);
 
