@@ -1,0 +1,56 @@
+@import 'variable';
+@import 'mixins';
+/*=================================
+  cards styling starts here
+=================================*/
+.cards {
+  .wrapper {
+    padding: 94px 5% 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .common-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    p {
+      margin: 29px;
+      font-size: 17.5px;
+    }
+  }
+
+  .card-list {
+    display: flex;
+    gap: 45px;
+    margin-top: 32px;
+
+    .card {
+      img {
+        width: 539px;
+      }
+
+      .pause {
+        position: relative;
+
+        &::before {
+          @include fix-pause($content-pause, 50px, 38%, 50%);
+        }
+      }
+    }
+
+    figcaption {
+      padding: 30px;
+      background-color: #2a3446;
+    }
+  }
+}
+/*=================================
+  cards styling ends here
+=================================*/

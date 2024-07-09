@@ -12,3 +12,17 @@
   display: flex;
   justify-content: $jstify-content;
 }
+
+@mixin fix-pause($content, $fontS, $top, $left) {
+  content: $content;
+  font-family: 'fontAwesome';
+  font-size: $fontS;
+  color: #f0f8ffb2;
+  display: flex;
+  text-indent: 0;
+  position: absolute;
+  z-index: 2;
+  top: $top;
+  left: $left;
+  transform: translate(-50%, -50%);
+}
