@@ -1,0 +1,64 @@
+@import 'variable';
+@import 'mixins';
+/*=================================
+  banner styling ends here
+=================================*/
+.banner {
+  position: relative;
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .banner-content {
+    @include flex-space(center);
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .banner-buttons {
+    padding: 30px 0 60px;
+    display: flex;
+    gap: 14px;
+
+    .button {
+      padding: 16px 48px;
+      border-radius: 41px;
+    }
+  }
+
+  .banner-image {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-size: 47px;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: 19px;
+    line-height: 33px;
+    text-align: center;
+    margin: 23px 0;
+  }
+
+  a {
+    padding: 14px 25px;
+    border: 1.5px solid #ebe6e682;
+    border-radius: 3px;
+    color: $aliblue;
+    font-weight: 900;
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+/*=================================
+  banner styling ends here
+=================================*/

@@ -217,12 +217,12 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .header-left,
 header .header-right {
@@ -273,4 +273,73 @@ h5 {
 
 /*=================================
   Header styling ends here
+=================================*/
+/*=================================
+  banner styling ends here
+=================================*/
+.banner {
+  position: relative;
+}
+.banner .wrapper {
+  width: 100%;
+}
+.banner .banner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.banner .banner-buttons {
+  padding: 30px 0 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+}
+.banner .banner-buttons .button {
+  padding: 16px 48px;
+  border-radius: 41px;
+}
+.banner .banner-image {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner h2 {
+  font-size: 47px;
+  font-weight: 900;
+}
+.banner p {
+  font-size: 19px;
+  line-height: 33px;
+  text-align: center;
+  margin: 23px 0;
+}
+.banner a {
+  padding: 14px 25px;
+  border: 1.5px solid rgba(235, 230, 230, 0.5098039216);
+  border-radius: 3px;
+  color: #f0f8ff;
+  font-weight: 900;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*=================================
+  banner styling ends here
 =================================*/
