@@ -367,6 +367,8 @@ h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .cards .common-div {
   display: -webkit-box;
@@ -436,7 +438,8 @@ h5 {
 =================================*/
 .choose {
   background-color: rgba(52, 58, 61, 0.2901960784);
-  padding: 94px 5% 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .choose .common-div {
   display: -webkit-box;
@@ -539,6 +542,10 @@ h5 {
 /*=================================
   more styling starts here
 =================================*/
+.more {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
 .more .common-div {
   display: -webkit-box;
   display: -ms-flexbox;

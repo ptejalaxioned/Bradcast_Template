@@ -4,7 +4,8 @@
 =================================*/
 .more {
   @include common-div(center);
-
+  @include padding();
+  
   &-list {
     width: 100%;
     display: flex;
