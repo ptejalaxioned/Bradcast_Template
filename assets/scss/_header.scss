@@ -1,0 +1,55 @@
+@import 'default/variable';
+/*=================================
+  Header styling starts here
+=================================*/
+header {
+  background-color: $dark-navy;
+  padding: 12px 16px;
+
+  .wrapper {
+    width: 100%;
+    @include flex-space(space-between);
+    align-items: center;
+  }
+
+  .header-left,
+  .header-right {
+    display: flex;
+    gap: 5px;
+  }
+
+  .hamburger {
+    @include flex-space(center);
+    flex-direction: column;
+    gap: 2px;
+
+    .line {
+      width: 15px;
+      display: flex;
+      text-indent: -9999px;
+      line-height: 0px;
+
+      &::before {
+        content: '';
+        width: 17px;
+        border-bottom: 2px solid $light-grey;
+        border-radius: 2px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+h1 a {
+  color: $aliblue;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 14px;
+  color: $light-grey;
+}
+/*=================================
+  Header styling ends here
+=================================*/

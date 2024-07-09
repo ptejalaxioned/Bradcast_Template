@@ -1,20 +1,92 @@
-@charset "utf-8";
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
-
 /* 1.1. Eric Meyers Reset
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,22 +96,34 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
-
-input[type='radio'] { vertical-align: text-bottom; }
+input[type=radio] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
-input[type='button'],
-input[type='submit'],
+input[type=button],
+input[type=submit],
 button {
   cursor: pointer;
 }
@@ -50,7 +134,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   width: 100%;
@@ -66,89 +152,125 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+  top: -0.7em;
+}
+
+sub {
+  bottom: -0.25em;
+}
 
 /* 1.2. Clear Fix
    ========================== */
-
 .cf:before,
 .cf:after {
   display: table;
   content: " ";
 }
 
-.cf:after { clear: both; }
-.cf { *zoom: 1; }
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
 
 /*for all*/
 body {
-  box-sizing: border-box;
   font-family: sans-serif;
+  background-color: #121e38;
+  color: #f0f8ff;
 }
 
-a { 
-  display: inline-block;
-  text-decoration: none; 
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-li {
+li,
+a {
   display: inline-block;
   list-style-type: none;
 }
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
+  max-width: 1920px;
+  width: 90%;
   margin: 0 auto;
 }
+
 /*=================================
   Header styling starts here
 =================================*/
+header {
+  background-color: rgba(18, 30, 56, 0.9215686275);
+  padding: 12px 16px;
+}
+header .wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .header-left,
+header .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+header .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2px;
+}
+header .hamburger .line {
+  width: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-indent: -9999px;
+  line-height: 0px;
+}
+header .hamburger .line::before {
+  content: "";
+  width: 17px;
+  border-bottom: 2px solid rgba(190, 185, 185, 0.8705882353);
+  border-radius: 2px;
+  display: inline-block;
+}
 
+h1 a {
+  color: #f0f8ff;
+  font-size: 17px;
+  font-weight: 600;
+}
 
-
-
-
+h5 {
+  font-size: 14px;
+  color: rgba(190, 185, 185, 0.8705882353);
+}
 
 /*=================================
   Header styling ends here
-=================================*/  
-
-/*=================================
-  main styling starts here
 =================================*/
-
-
-
-
-
-
-
-
-/*=================================
-  main styling ends here
-=================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  

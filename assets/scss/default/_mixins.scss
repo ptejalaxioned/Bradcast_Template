@@ -1,0 +1,14 @@
+@mixin inline-block-text() {
+  display: inline-block;
+  list-style-type: none;
+}
+
+@mixin color-bg($bg, $color) {
+  background-color: $bg;
+  color: $color;
+}
+
+@mixin flex-space($jstify-content) {
+  display: flex;
+  justify-content: $jstify-content;
+}
