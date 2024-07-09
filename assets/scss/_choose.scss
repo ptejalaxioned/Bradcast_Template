@@ -1,0 +1,72 @@
+@import 'default/variable';
+@import 'default/mixins';
+/*=================================
+  choose styling starts here
+=================================*/
+.choose {
+  background-color: #343a3d4a;
+  padding: 94px 5% 50px;
+
+  .wrapper {
+    padding: 94px 5% 50px;
+  }
+
+  .common-div {
+    align-items: start;
+  }
+
+  p {
+    margin: 29px 0;
+  }
+
+  &-down {
+    display: flex;
+    gap: 35px;
+    margin-top: 30px;
+  }
+
+  &-right {
+    @include flex-space(space-between);
+    flex-wrap: wrap;
+    width: 93%;
+    gap: 10px;
+
+    li {
+      width: 31%;
+    }
+  }
+
+  &-left {
+    width: 25%;
+  }
+
+  &-image {
+    position: relative;
+
+    .pause::before {
+      @include fix-pause($content-pause, 40px, 46%, 50%);
+    }
+  }
+
+  .button-div {
+    width: 100%;
+    @include flex-dir(column);
+    gap: 8px;
+
+    a {
+      padding: 10px 15px;
+      background-color: #323d50;
+      border-radius: 4px;
+      font-size: 14px;
+      color: $light-grey;
+    }
+  }
+
+  img {
+    border-radius: 3px;
+  }
+}
+
+/*=================================
+  choose styling ends here
+=================================*/

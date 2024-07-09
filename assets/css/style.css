@@ -413,3 +413,90 @@ h5 {
 /*=================================
   cards styling ends here
 =================================*/
+/*=================================
+  choose styling starts here
+=================================*/
+.choose {
+  background-color: rgba(52, 58, 61, 0.2901960784);
+  padding: 94px 5% 50px;
+}
+.choose .wrapper {
+  padding: 94px 5% 50px;
+}
+.choose .common-div {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.choose p {
+  margin: 29px 0;
+}
+.choose-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+  margin-top: 30px;
+}
+.choose-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 93%;
+  gap: 10px;
+}
+.choose-right li {
+  width: 31%;
+}
+.choose-left {
+  width: 25%;
+}
+.choose-image {
+  position: relative;
+}
+.choose-image .pause::before {
+  content: "\f04b";
+  font-family: "fontAwesome";
+  font-size: 40px;
+  color: rgba(240, 248, 255, 0.6980392157);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-indent: 0;
+  position: absolute;
+  z-index: 2;
+  top: 46%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.choose .button-div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+.choose .button-div a {
+  padding: 10px 15px;
+  background-color: #323d50;
+  border-radius: 4px;
+  font-size: 14px;
+  color: rgba(190, 185, 185, 0.8705882353);
+}
+.choose img {
+  border-radius: 3px;
+}
+
+/*=================================
+  choose styling ends here
+=================================*/
