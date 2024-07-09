@@ -343,3 +343,73 @@ h5 {
 /*=================================
   banner styling ends here
 =================================*/
+/*=================================
+  cards styling starts here
+=================================*/
+.cards .wrapper {
+  padding: 94px 5% 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cards .common-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cards .common-div h3 {
+  font-size: 30px;
+  font-weight: 900;
+}
+.cards .common-div p {
+  margin: 29px;
+  font-size: 17.5px;
+}
+.cards .card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 45px;
+  margin-top: 32px;
+}
+.cards .card-list .card img {
+  width: 539px;
+}
+.cards .card-list .card .pause {
+  position: relative;
+}
+.cards .card-list .card .pause::before {
+  content: "\f04b";
+  font-family: "fontAwesome";
+  font-size: 50px;
+  color: rgba(240, 248, 255, 0.6980392157);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-indent: 0;
+  position: absolute;
+  z-index: 2;
+  top: 38%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.cards .card-list figcaption {
+  padding: 30px;
+  background-color: #2a3446;
+}
+
+/*=================================
+  cards styling ends here
+=================================*/

@@ -1,18 +1,17 @@
-@import 'variable';
-@import 'mixins';
+@import 'default/mixins';
+@import 'default/variable';
+
 /*=================================
   cards styling starts here
 =================================*/
 .cards {
   .wrapper {
     padding: 94px 5% 50px;
-    display: flex;
-    flex-direction: column;
+    @include flex-dir(column);
   }
 
   .common-div {
-    display: flex;
-    flex-direction: column;
+    @include flex-dir(column);
     align-items: center;
 
     h3 {

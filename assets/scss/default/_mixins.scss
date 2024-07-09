@@ -13,6 +13,11 @@
   justify-content: $jstify-content;
 }
 
+@mixin flex-dir($flex-dir) {
+  display: flex;
+  flex-direction: $flex-dir;
+}
+
 @mixin fix-pause($content, $fontS, $top, $left) {
   content: $content;
   font-family: 'fontAwesome';
