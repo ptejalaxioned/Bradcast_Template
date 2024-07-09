@@ -1,0 +1,95 @@
+@import 'default/variable';
+@import 'default/mixins';
+/*=================================
+  footer styling starts here
+=================================*/
+footer {
+  background-color: #000000;
+  #000000 .wrapper {
+    padding: 94px 0;
+    @include flex-dir(column);
+    gap: 28px;
+
+    .footer-up {
+      display: flex;
+      gap: 40px;
+    }
+
+    .footer-down {
+      @include flex-dir(column);
+      align-items: center;
+      gap: 10px;
+
+      p {
+        font-size: 14px;
+      }
+
+      .footer-span {
+        color: $aliblue;
+      }
+    }
+
+    .footer-list {
+      padding: 20px 0;
+
+      li {
+        padding: 12px 0;
+        border-bottom: 0.5px solid $light-grey;
+        width: 100%;
+        font-size: 14.5px;
+        color: $light-grey;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+
+    h4 {
+      font-size: 23px;
+      font-weight: 900;
+    }
+
+    .icon-list {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+
+      a {
+        float: left;
+        text-indent: -9999px;
+
+        &::before {
+          font-family: 'FontAwesome';
+          font-size: 22px;
+          display: flex;
+          text-indent: 0;
+          color: $aliblue;
+        }
+      }
+
+      .facebook::before {
+        content: '\f09a';
+      }
+
+      .instagram::before {
+        content: '\f16d';
+      }
+
+      .snapchat::before {
+        content: '\f2ab';
+      }
+
+      .twitter::before {
+        content: '\f099';
+      }
+    }
+
+    figcaption {
+      color: $light-grey;
+    }
+  }
+}
+/*=================================
+  footer styling ends here
+=================================*/
